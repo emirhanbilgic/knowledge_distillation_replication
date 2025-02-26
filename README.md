@@ -71,7 +71,38 @@ pip install protobuf==3.20.3
 
 Use the following commands after setting the environment:
 
-- For Figure 1: 
+- For Figure 1:
+To train the teachers:
+```bash
+```
+Self distillation without GAN:
+```bash
+```
+Ensemble distillation without GAN:
+```bash
+```
+Self distillation with 12.5k GAN:
+```bash
+```
+Ensemble distillation with 12.5k GAN:
+```bash
+```
+Self distillation with 25k GAN:
+```bash
+```
+Ensemble distillation with 25k GAN:
+```bash
+```
+Self distillation with 37.5k GAN:
+```bash
+```
+Ensemble distillation with 37.5k GAN:
+```bash
+```
+Self distillation with 50k GAN:
+```bash
+```
+Ensemble distillation with 50k GAN:
 ```bash
 ```
 - For Figure 2: 
