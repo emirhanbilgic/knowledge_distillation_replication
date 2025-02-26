@@ -80,7 +80,8 @@ Use the following commands after setting the environment:
 - For Figure 3: 
 ```bash
 ```
-- For Figure 5 (left:
+- For Figure 5 (left):
+
 Same as Figure 1
 
 ```bash
