@@ -85,27 +85,99 @@ Ensemble distillation without GAN:
 ```
 Self distillation with 12.5k GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  distill_loader.synth_ratio=0.2 \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube/leather_sofa_3"
 ```
 Ensemble distillation with 12.5k GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  distill_loader.synth_ratio=0.2 \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 Self distillation with 25k GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  distill_loader.synth_ratio=0.4 \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube/leather_sofa_3"
 ```
 Ensemble distillation with 25k GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  distill_loader.synth_ratio=0.4 \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 Self distillation with 37.5k GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  distill_loader.synth_ratio=0.6 \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube/leather_sofa_3"
 ```
 Ensemble distillation with 37.5k GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  distill_loader.synth_ratio=0.6 \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 Self distillation with 50k GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  distill_loader.synth_ratio=0.8 \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube/leather_sofa_3"
 ```
 Ensemble distillation with 50k GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  distill_loader.synth_ratio=0.8 \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 - For Figure 2:
 
