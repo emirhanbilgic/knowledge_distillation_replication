@@ -113,17 +113,62 @@ Ensemble distillation with 50k GAN:
 To train the teacher: 
 ```bash
 ```
-MNIST 60k distillation (without EMNIST): 
+MNIST 60k distillation (without EMNIST, if you have the teacher): 
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m dataset=mnist classifier=lenet \
+  dataset.init.num_data=54000 \
+  dataset.statistics.mean_statistics="[0]" \
+  dataset.statistics.std_statistics="[1]" \
+  dataset.statistics.max="[1]" \
+  dataset.statistics.min="[0]" \
+  trainer.num_epochs=50 trial_id=3 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  teacher.ckpt_dir="/content/content/data/experiments/image_classification/without_distill_mnist_final/threaded_maple_5"
 ```
 Distillation with additional 175k EMNIST: 
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m dataset=emnist classifier=lenet \
+  dataset.subsample.ratio=0.25 \
+  dataset.statistics.mean_statistics="[0]" \
+  dataset.statistics.std_statistics="[1]" \
+  dataset.statistics.max="[1]" \
+  dataset.statistics.min="[0]" \
+  trainer.num_epochs=30 trial_id=3 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+teacher.ckpt_dir="/content/content/data/experiments/image_classification/without_distill_mnist_final/threaded_maple_5"
+
 ```
 Distillation with additional 350k EMNIST: 
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m dataset=emnist classifier=lenet \
+  dataset.subsample.ratio=0.5 \
+  dataset.statistics.mean_statistics="[0]" \
+  dataset.statistics.std_statistics="[1]" \
+  dataset.statistics.max="[1]" \
+  dataset.statistics.min="[0]" \
+  trainer.num_epochs=30 trial_id=3 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  teacher.ckpt_dir="/content/content/data/experiments/image_classification/without_distill_mnist_final/threaded_maple_5"
 ```
 Distillation with additional 700k EMNIST: 
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m dataset=emnist classifier=lenet \
+  dataset.subsample.ratio=1 \
+  dataset.statistics.mean_statistics="[0]" \
+  dataset.statistics.std_statistics="[1]" \
+  dataset.statistics.max="[1]" \
+  dataset.statistics.min="[0]" \
+  trainer.num_epochs=30 trial_id=3 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  teacher.ckpt_dir="/content/content/data/experiments/image_classification/without_distill_mnist_final/threaded_maple_5"
 ```
 - For Figure 3:
 
