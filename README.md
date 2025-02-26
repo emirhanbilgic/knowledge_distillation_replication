@@ -139,7 +139,7 @@ Distillation with additional 175k EMNIST:
   trainer.num_epochs=30 trial_id=3 \
   augmentation.transforms_list=[horizontal_flip,crop] \
   dataloader.batch_size=128 \
-teacher.ckpt_dir="/content/content/data/experiments/image_classification/without_distill_mnist_final/threaded_maple_5"
+  teacher.ckpt_dir="/content/content/data/experiments/image_classification/without_distill_mnist_final/threaded_maple_5"
 
 ```
 Distillation with additional 350k EMNIST: 
