@@ -266,7 +266,26 @@ Same as Figure 1
 
 To train and distill the ResNet20 model on SGD Optimization:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=1 exp_name=resnet20-sgd \
+  classifier.depth=20 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.num_epochs=150
 ```
 To train and distill the ResNet20 model on Adam Optimzer:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=resnet20 \
+  classifier.depth=20 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.num_epochs=150 \
+  trainer.optimizer._target_=torch.optim.Adam \
+  trainer.optimizer.lr=5e-4 \
+  trainer.optimizer.weight_decay=1e-4 \
+  ~trainer.optimizer.momentum \
+  ~trainer.optimizer.nesterov
 ```
