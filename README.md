@@ -126,6 +126,8 @@ Distillation with additional 700k EMNIST:
 ```bash
 ```
 - For Figure 3:
+
+
 To train and distill the model with Baseline (temperature = 1):
 ```bash
 ```
