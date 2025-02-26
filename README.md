@@ -81,9 +81,8 @@ Use the following commands after setting the environment:
 ```bash
 ```
 - For Figure 5 (left:
-```bash
-```
-Same as figure 1 
+Same as Figure 1
+
 ```bash
 ```
 - For Figure 6 (a):
