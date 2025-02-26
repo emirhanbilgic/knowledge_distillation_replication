@@ -72,6 +72,8 @@ pip install protobuf==3.20.3
 Use the following commands after setting the environment:
 
 - For Figure 1:
+
+  
 To train the teachers:
 ```bash
 ```
@@ -106,6 +108,8 @@ Ensemble distillation with 50k GAN:
 ```bash
 ```
 - For Figure 2:
+
+  
 To train the teacher: 
 ```bash
 ```
@@ -139,6 +143,8 @@ To train and distill the model with Rotation (temperature = 1):
 Same as Figure 1
 
 - For Figure 6 (a):
+
+
 To train and distill the ResNet20 model on SGD Optimization:
 ```bash
 ```
