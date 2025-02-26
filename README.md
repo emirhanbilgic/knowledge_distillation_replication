@@ -105,7 +105,20 @@ Self distillation with 50k GAN:
 Ensemble distillation with 50k GAN:
 ```bash
 ```
-- For Figure 2: 
+- For Figure 2:
+To train the teacher: 
+```bash
+```
+MNIST 60k distillation (without EMNIST): 
+```bash
+```
+Distillation with additional 175k EMNIST: 
+```bash
+```
+Distillation with additional 350k EMNIST: 
+```bash
+```
+Distillation with additional 700k EMNIST: 
 ```bash
 ```
 - For Figure 3: 
