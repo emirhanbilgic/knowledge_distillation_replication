@@ -2,9 +2,15 @@
 
 This repo aims to replicate the experiments in the paper "Does Knowledge Distillation Really Work?".
 
-All the results can be accessed from the "all_resulting_csv_files" folder. 
-
 ## Introduction
+
+### Trained Models (if only distillation will be done):
+
+Trained models can be accessed from the "trained_models" folder. 
+
+### Resulting Files: 
+
+All the results can be accessed from the "all_resulting_csv_files" folder. 
 
 - Figure 1 files: self_cifar_without_gan.csv, self_gan_12.5.csv, self_gan_25.csv, self_gan_37.5.csv, self_gan_50.csv,
 ensemble_cifar_without_gan.csv, ensemble_gan_12.5.csv, ensemble_gan_25.csv, ensemble_gan_37.5.csv, ensemble_gan_50.csv
@@ -16,3 +22,9 @@ ensemble_cifar_without_gan.csv, ensemble_gan_12.5.csv, ensemble_gan_25.csv, ense
 - Figure 5 (left) files: same as Figure 1
 
 - Figure 6 (a) files: adam.csv, sgd.csv
+
+## How to Set Up the Environment?
+
+We used Google Colab in our experiments, to be able to run the code provided by the authors: https://github.com/samuelstanton/gnosis, you first need to set the environment up. To do that, run the following code blocks in Colab: 
+
+
