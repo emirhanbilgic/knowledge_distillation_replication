@@ -1,3 +1,3 @@
-# knowledge_distillation_reimplementation
+# Replication of Does Knowledge Distillation Really Work?
 
-This repo aims to replicate the experiments in the paper "Does knowledge distillation really works?".
+This repo aims to replicate the experiments in the paper "Does Knowledge Distillation Really Work?".
