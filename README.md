@@ -25,10 +25,6 @@ ensemble_cifar_without_gan.csv, ensemble_gan_12.5.csv, ensemble_gan_25.csv, ense
 
 ## How to Set Up the Environment?
 
-We used Google Colab in our experiments, to be able to run the code provided by the authors: https://github.com/samuelstanton/gnosis, you first need to set the environment up. To do that, run the following code blocks in Colab: 
-
-## How to Set Up the Environment?
-
 We used Google Colab in our experiments. To be able to run the code provided by the authors: [gnosis repository](https://github.com/samuelstanton/gnosis), you first need to set the environment up. To do that, run the following code blocks in Colab:
 
 ```bash
@@ -69,4 +65,27 @@ source gnosis-env/bin/activate
  
 # Downgrade protobuf to version 3.20.3
 pip install protobuf==3.20.3
+```
+
+## How to Run the Experiments?
+
+Use the following commands after setting the environment:
+
+- For Figure 1: 
+```bash
+```
+- For Figure 2: 
+```bash
+```
+- For Figure 3: 
+```bash
+```
+- For Figure 5 (left:
+```bash
+```
+Same as figure 1 
+```bash
+```
+- For Figure 6 (a):
+```bash
 ```
