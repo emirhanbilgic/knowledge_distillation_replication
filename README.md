@@ -247,15 +247,52 @@ Distillation with additional 700k EMNIST:
 
 To train and distill the model with Baseline (temperature = 1):
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.num_epochs=20 \
+  distill_loader.temp=1.0 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 To train and distill the model with Baseline (temperature = 4):
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.num_epochs=20 \
+  distill_loader.temp=4.0 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 To train and distill the model with Mixup Data Augmentation (temperature = 1):
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.num_epochs=20 \
+  distill_loader.temp=1.0 \
+  distill_loader.mixup_alpha=1 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 To train and distill the model with Rotation (temperature = 1):
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop,rotation] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.num_epochs=20 \
+  distill_loader.temp=1.0 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 - For Figure 5 (left):
 
