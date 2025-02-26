@@ -121,7 +121,17 @@ Distillation with additional 350k EMNIST:
 Distillation with additional 700k EMNIST: 
 ```bash
 ```
-- For Figure 3: 
+- For Figure 3:
+To train and distill the model with Baseline (temperature = 1):
+```bash
+```
+To train and distill the model with Baseline (temperature = 4):
+```bash
+```
+To train and distill the model with Mixup Data Augmentation (temperature = 1):
+```bash
+```
+To train and distill the model with Rotation (temperature = 1):
 ```bash
 ```
 - For Figure 5 (left):
@@ -129,5 +139,9 @@ Distillation with additional 700k EMNIST:
 Same as Figure 1
 
 - For Figure 6 (a):
+To train and distill the ResNet20 model on SGD Optimization:
+```bash
+```
+To train and distill the ResNet20 model on Adam Optimzer:
 ```bash
 ```
