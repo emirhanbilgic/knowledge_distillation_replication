@@ -1,6 +1,6 @@
 # Replication of "Does Knowledge Distillation Really Work?"
 
-This repo aims to replicate the experiments in the paper "Does Knowledge Distillation Really Work?".
+This repo aims to replicate the experiments in the paper "Does Knowledge Distillation Really Work?" https://arxiv.org/abs/2106.05945.
 
 ## Introduction
 
