@@ -89,6 +89,9 @@ Self distillation without GAN:
 Ensemble distillation without GAN:
 ```bash
 ```
+To train the GAN: 
+```bash
+```
 Self distillation with 12.5k GAN:
 ```bash
 !source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
