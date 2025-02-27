@@ -91,6 +91,12 @@ Ensemble distillation without GAN:
 ```
 To train the GAN: 
 ```bash
+!source gnosis-env/bin/activate && python /content/gnosis/scripts/image_generation.py \
+  -m trainer.checkpoint_period=1 \
+  hydra.run.dir="/content/checkpoints" \
+  logger.log_dir="/content/checkpoints" \
+  data_dir="/content/checkpoints" \
+  trainer.eval_period=100
 ```
 Self distillation with 12.5k GAN:
 ```bash
