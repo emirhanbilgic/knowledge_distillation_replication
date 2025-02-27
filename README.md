@@ -85,9 +85,25 @@ To train the teachers (trial_id (seed) can be changed, if you want to train 3 te
 ```
 Self distillation without GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube/leather_sofa_3"
 ```
 Ensemble distillation without GAN:
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m trial_id=3 exp_name=student_resnet_56_self_distil \
+  classifier.depth=56 \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  dataloader.batch_size=128 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.num_epochs=20 \
+  teacher.ckpt_dir="/content/content/content/data/experiments/image_classification/test/preresnet56_cifar100_unitcube"
 ```
 To train the GAN: 
 ```bash
