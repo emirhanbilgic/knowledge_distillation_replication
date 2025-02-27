@@ -213,8 +213,19 @@ Ensemble distillation with 50k GAN:
 - For Figure 2:
 
   
-To train the teacher: 
+To train the teacher (only if you want to train all teachers at once, if not, change the trial_id to a single value): 
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m dataset=mnist classifier=lenet \
+  dataset.statistics.mean_statistics="[0]" \
+  dataset.statistics.std_statistics="[1]" \
+  dataset.statistics.max="[1]" \
+  dataset.statistics.min="[0]" \
+  trainer.optimizer.lr=0.1 \
+  trainer.num_epochs=100 trial_id=3,4,5 \
+  exp_name=without_distill_mnist_final \
+  augmentation.transforms_list=[horizontal_flip,crop] \
+  trainer.distill_teacher=False
 ```
 MNIST 60k distillation (without EMNIST, if you have the teacher): 
 ```bash
