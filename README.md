@@ -23,7 +23,7 @@ ensemble_cifar_without_gan.csv, ensemble_gan_12.5.csv, ensemble_gan_25.csv, ense
 
 - Figure 6 (a) files: adam.csv, sgd.csv
 
-## Scripts
+### Scripts
 
 Scripts can be accessed from the "scripts" folder. 
 
