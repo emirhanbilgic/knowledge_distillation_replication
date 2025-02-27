@@ -212,7 +212,8 @@ Ensemble distillation with 50k GAN:
 ```
 - For Figure 2:
 
-  
+In downloading MNIST and EMNIST dataset, you might face some HTTP issues, to overcome this, we created a detailed instructions document, you can access it via this link: https://docs.google.com/document/d/13QAJhrD0JMBOcTkTE_uzNtptfxvKLOSEjmIWhiD2VBM/edit?usp=sharing
+
 To train the teacher (only if you want to train all teachers at once, if not, change the trial_id to a single value): 
 ```bash
 !source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
