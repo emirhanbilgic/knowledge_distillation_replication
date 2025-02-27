@@ -23,6 +23,10 @@ ensemble_cifar_without_gan.csv, ensemble_gan_12.5.csv, ensemble_gan_25.csv, ense
 
 - Figure 6 (a) files: adam.csv, sgd.csv
 
+## Scripts
+
+Scripts can be accessed from the "scripts" folder. 
+
 ## How to Set Up the Environment?
 
 We used Google Colab in our experiments. To be able to run the code provided by the authors: [gnosis repository](https://github.com/samuelstanton/gnosis), you first need to set the environment up. To do that, run the following code blocks in Colab:
