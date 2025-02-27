@@ -340,6 +340,10 @@ To train and distill the model with Rotation (temperature = 1):
 
 Same as Figure 1
 
+- For Figure 5 (right):
+
+Same as Figure 3
+
 - For Figure 6 (a):
 
 
