@@ -74,7 +74,7 @@ Use the following commands after setting the environment:
 - For Figure 1:
 
   
-To train the teachers (trial_id (seed) can be changed):
+To train the teachers (trial_id (seed) can be changed, if you want to train 3 teachers at once, you can give three numbers like 1,2,3):
 ```bash
 !source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
   -m teacher.use_ckpts=False classifier.depth=56 \
