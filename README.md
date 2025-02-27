@@ -74,8 +74,14 @@ Use the following commands after setting the environment:
 - For Figure 1:
 
   
-To train the teachers:
+To train the teachers (trial_id (seed) can be changed):
 ```bash
+!source gnosis-env/bin/activate && python gnosis/scripts/image_classification.py \
+  -m teacher.use_ckpts=False classifier.depth=56 \
+  trainer.num_epochs=50 trainer.optimizer.lr=5e-2 \
+  trainer.lr_scheduler.eta_min=0. \
+  trainer.distill_teacher=False dataloader.batch_size=256 \
+  trial_id=0
 ```
 Self distillation without GAN:
 ```bash
